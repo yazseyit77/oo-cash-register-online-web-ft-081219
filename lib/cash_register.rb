@@ -13,7 +13,7 @@ class CashRegister
     self.total += @sub_total
     if quantity > 1
       while quantity > 0
-        @cart << title
+        @items << title
         quantity -= 1
       end
     else
@@ -32,8 +32,8 @@ class CashRegister
     end
   end
 
-  def cart
-    @cart
+  def items
+    @items
   end
 
 end
