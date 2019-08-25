@@ -19,7 +19,7 @@ class CashRegister
     else
       @cart << title
     end
-      
+
   end
 
   def apply_discount
