@@ -8,16 +8,16 @@ class CashRegister
     @cart = []
   end
 
-  def add_item(title, price, quantity = 1)
+  def add_item(item, price, quantity = 1)
     @sub_total = price * quantity
     self.total += @sub_total
     if quantity > 1
       while quantity > 0
-        @items << title
+        @items << item
         quantity -= 1
       end
     else
-      @cart << title
+      @items << item
     end
 
   end
